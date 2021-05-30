@@ -1,1 +1,1 @@
-# ShortURL – A free URL Shortener class for JS
+# ShortURL – A free URL Shortener for JS
