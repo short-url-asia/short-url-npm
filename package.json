@@ -1,5 +1,5 @@
 {
-  "name": "shorturl",
+  "name": "@short-url/shorturl",
   "version": "1.0.0",
   "description": "Short url",
   "main": "./lib/short-url.js",
@@ -24,5 +24,10 @@
   "homepage": "https://github.com/short-url-asia/short-url-npm#readme",
   "dependencies": {
     "fetch": "^1.1.0"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
