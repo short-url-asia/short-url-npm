@@ -1,6 +1,6 @@
 var makeShortUrl = require("../lib/short-url").makeShortUrl;
 
-makeShortUrl("http://kreata.ee/iso-8859-15.php", {}, function (error, data) {
+makeShortUrl("https://www.google.com/", {}, function (error, data) {
   if (error) {
     return console.log('ERROR', data);
   }
@@ -9,7 +9,7 @@ makeShortUrl("http://kreata.ee/iso-8859-15.php", {}, function (error, data) {
   console.log(data);
 });
 
-makeShortUrl("http://kreata.ee/iso-8859-15.php")
+makeShortUrl("https://www.google.com/")
   .then((url) => {
     console.log(url);
   })
