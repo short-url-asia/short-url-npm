@@ -19,6 +19,7 @@ Where
   * **callback** is the callback to run - `callback(error, body)`
 
 Example
+
     var makeShortUrl = require("@short-url/shorturl").makeShortUrl;
 
     makeShortUrl("https://www.google.com/", {}, function (error, data) {
