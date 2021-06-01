@@ -8,7 +8,7 @@
 
 See examples folder for a complete example
 
-## Fetch from URL
+## Make a short URL
 
 `shortURL.makeShortUrl(url, options, callback)`
 
@@ -24,18 +24,17 @@ Example
 
     makeShortUrl("https://www.google.com/", {}, function (error, data) {
         if (error) {
-            return console.log('ERROR', data);
+            return console.log('ERROR', error);
         }
 
-        console.log('URL');
-        console.log(data);
+        console.log('URL', url);
     });
 
     // With async function
     makeShortUrl("https://www.google.com/")
         .then((url) => {
-            console.log(url);
+            console.log('URL', url);
         })
         .catch((err) => {
-            console.log(error);
+            console.log('ERROR', error);
         });

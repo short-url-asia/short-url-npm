@@ -1,18 +1,17 @@
 var makeShortUrl = require("../lib/short-url").makeShortUrl;
 
-makeShortUrl("https://www.google.com/", {}, function (error, data) {
+makeShortUrl("132", {}, function (error, data) {
   if (error) {
-    return console.log('ERROR', data);
+    return console.log('ERROR', error);
   }
 
-  console.log('URL');
-  console.log(data);
+  console.log('URL', data);
 });
 
 makeShortUrl("https://www.google.com/")
   .then((url) => {
-    console.log(url);
+    console.log('URL', url);
   })
   .catch((err) => {
-    console.log(error);
+    console.log('ERROR', error);
   });
