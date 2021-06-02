@@ -1,6 +1,6 @@
 var makeShortUrl = require("../lib/short-url").makeShortUrl;
 
-makeShortUrl("132", {}, function (error, data) {
+makeShortUrl("https://www.google.com/", { key: 'your_api_key' }, function (error, data) {
   if (error) {
     return console.log('ERROR', error);
   }
@@ -8,7 +8,7 @@ makeShortUrl("132", {}, function (error, data) {
   console.log('URL', data);
 });
 
-makeShortUrl("https://www.google.com/")
+makeShortUrl("https://www.google.com/", { key: 'your_api_key' })
   .then((url) => {
     console.log('URL', url);
   })
